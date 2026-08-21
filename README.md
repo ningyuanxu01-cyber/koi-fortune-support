@@ -16,13 +16,36 @@
 
 ---
 
-## 隐私与 AI 安全
+## 隐私与数据处理
 
-我们重视用户隐私以及 AI 功能的安全使用。
+我们重视用户隐私，并尽量减少不必要的数据收集与存储。
 
-当用户使用 AI 解读功能时，应用仅会处理生成相关解读所必要的信息。部分必要的用户输入可能会被发送至提供 AI 推理能力的服务，以完成相应的 AI 内容生成。
+### 未登录用户
 
-我们不会通过 AI 提示词（prompt）主动要求用户提供密码、账户凭证、身份证件号码、支付信息或其他与功能无关的敏感个人信息。
+如果用户未登录账号：
+
+* 用户输入的算卦问题不会保存到我们的数据库；
+* 起卦结果不会保存到我们的数据库；
+* AI 解读结果不会保存到我们的数据库；
+* 未登录状态下不会创建与用户身份关联的历史记录。
+
+为完成 AI 解读功能，必要的输入内容可能会临时发送至提供 AI 推理能力的服务，用于生成当前请求的结果。
+
+这些内容的发送仅用于完成用户当前请求，并不代表应用会将相关内容保存到自身数据库。
+
+### 登录用户
+
+如果用户选择登录并使用历史记录等相关功能，应用可能会保存与这些功能相关的必要数据，例如用户主动保存的算卦记录、问题或解读结果，以便用户之后查看。
+
+应用仅会处理提供相关功能所必要的数据。
+
+---
+
+## AI 隐私与安全
+
+我们重视 AI 功能的安全使用以及用户信息保护。
+
+我们不会通过 AI 提示词（prompt）主动要求用户提供密码、账户凭证、身份证件号码、支付信息或其他与应用功能无关的敏感个人信息。
 
 AI 请求采用严格的提示词规则、安全策略与内容限制，旨在：
 
@@ -32,7 +55,9 @@ AI 请求采用严格的提示词规则、安全策略与内容限制，旨在�
 * 避免将 AI 生成内容呈现为医疗、法律、财务、投资等专业意见；
 * 降低误导性、危险性或不适当内容产生的风险。
 
-由于人工智能生成内容具有概率性，我们无法保证 AI 输出在所有情况下都完全准确或不会出现错误。用户不应仅依据 AI 生成内容作出可能影响健康、安全、法律权益、财务状况或其他重大现实利益的决定。
+由于人工智能生成内容具有概率性，我们无法保证 AI 输出在所有情况下都完全准确或不会出现错误。
+
+用户不应仅依据 AI 生成内容作出可能影响健康、安全、法律权益、财务状况或其他重大现实利益的决定。
 
 请不要在 AI 输入内容中主动提交密码、银行卡信息、身份证件号码、账户凭证或其他不必要的高度敏感信息。
 
@@ -79,11 +104,34 @@ For technical support, feedback, or questions regarding login, AI interpretation
 
 ---
 
-## Privacy & AI Safety
+## Privacy & Data Handling
+
+We value user privacy and aim to minimize unnecessary collection and storage of user data.
+
+### Users Who Are Not Logged In
+
+If a user is not logged into an account:
+
+* Divination questions entered by the user are not stored in our database;
+* Divination results are not stored in our database;
+* AI-generated interpretation results are not stored in our database;
+* No identity-linked history record is created while using the app without logging in.
+
+To provide AI-powered interpretation features, necessary input may be temporarily transmitted to services that provide AI inference capabilities in order to generate the requested response.
+
+This transmission is used only to complete the current request and does not mean that the app stores the corresponding content in its own database.
+
+### Logged-In Users
+
+If a user chooses to log in and use features such as history or saved records, the app may store data necessary to provide those features, such as divination questions, results, or interpretations that the user chooses to save.
+
+We process only the data necessary to provide the relevant functionality.
+
+---
+
+## AI Privacy & Safety
 
 We take user privacy and the responsible use of AI seriously.
-
-When users access AI-powered interpretation features, the app processes only information necessary to provide the relevant AI-generated response. Some necessary user input may be transmitted to services that provide AI inference capabilities in order to generate the requested content.
 
 Our AI prompts are not designed to request passwords, account credentials, government identification numbers, payment information, or other sensitive personal information unrelated to the functionality of the app.
 
@@ -95,7 +143,9 @@ AI requests are subject to strict prompt rules, safety safeguards, and content r
 * Prevent AI-generated content from being presented as medical, legal, financial, investment, or other professional advice;
 * Reduce the risk of misleading, dangerous, or otherwise inappropriate outputs.
 
-Because AI-generated content is probabilistic, we cannot guarantee that every AI response will always be completely accurate or error-free. Users should not rely solely on AI-generated content when making decisions that may materially affect their health, safety, legal rights, financial situation, or other significant real-world interests.
+Because AI-generated content is probabilistic, we cannot guarantee that every AI response will always be completely accurate or error-free.
+
+Users should not rely solely on AI-generated content when making decisions that may materially affect their health, safety, legal rights, financial situation, or other significant real-world interests.
 
 Users should not submit passwords, payment card information, government identification numbers, account credentials, or other unnecessary highly sensitive information through AI input fields.
 
